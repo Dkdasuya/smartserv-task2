@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Task 2</title>
+</head>
+<body>
+
+   
+
+    <div class="container">
+        <div>
+            <p class="heading">Import Products</p>
+        </div>
+        <div class="container-top">
+            <div class="col" >
+                <div class="above-cards">
+                    <div class="left">
+                        <p class="step">Step 1:</p>
+                    </div>
+                    <div class="right">
+                        <p>Select File</p>
+                        <input id="input-file" type="file" />
+                        <p>Supported File Type(s): .CSV, .JSON</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col" >
+                <div class="above-cards">
+                    <div class="left">
+                        <p class="step">Step 2:</p>
+                    </div>
+                    <div class="right">
+                        <table style="margin-top: 30px;">
+                            <tr>
+                                <td class="w-30">Specify Format</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="w-30">File Type</td>
+                                    
+                                <td>
+                                    <select name="file-type" >
+                                        <option value="csv">csv</option>
+                                        <option value="json">json</option>
+                                      </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="w-30">Character Encoding</td>
+                                <td>
+                                    <select name="encoding" >
+                                        <option value="utf-8">UTF-8</option>
+                                        <option value="utf-9">UTF-9</option>
+                                      </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="w-30">Delimiter</td>
+                                <td>
+                                    <select name="delimiter" >
+                                        <option value="comma">comma</option>
+                                        <option value="hyphen">hyphen</option>
+                                      </select>
+                                </td>
+                            </tr><tr>
+                                <td class="w-30">Has Header</td>
+                                <td><input type="checkbox"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        
+        <div class="container-bottom">
+            <div class="left-10">
+                <div class="step-3">
+                    <div style="padding:17px">
+                        <input type="checkbox" />
+                    </div>
+                    <p style="font-weight: bold;">Step 3:</p>
+                </div>
+            </div>
+            <div class="right-10">
+                <p>Display Handling</p>
+                <p>  Select the fields to be displayed</p>
+                <div style="width: 50%;height: inherit;display: flex;flex-direction: row;">
+                    <div style="width: 40%; height: 100%;text-align: center;display: flex;flex-direction: column;">
+                        Available Fields
+                        <div>
+
+                        </div>
+                    </div>
+                    <div style="width: 20%; height: 100%;">
+                        <div style="display: flex;flex-direction: column; align-items: center;">
+                            <button id="displayed" style="width: 50%;margin-top: 30px;">>></button>
+                            <button id="removed" style="width: 50%;margin-top: 30px;" >  </button>
+                        </div>
+                    </div>
+                    <div style="width: 40%; height: 100%; text-align: center;display: flex;flex-direction: column;">
+                        Fields to be Displayed
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" style="text-align: right;">
+            <button class="next">Next</button>
+            <button class="cancel">Cancel</button>
+
+        </div>
+    </div>
+<script src="script.js"></script>
+    
+</body>
+</html>
