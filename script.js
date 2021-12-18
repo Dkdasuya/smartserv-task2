@@ -23,6 +23,14 @@ document.getElementById('input-file').addEventListener('change',function(event){
 })
 
 function displayInAvailableFields(jsonData){
-    console.log(jsonData.products[0]);
+    const keyArray = Object.keys(Object.values(jsonData.products)[0]);
+    const avaiableDisplay = document.querySelector('.container-table-fields');
+    for(let i=0;i<keyArray.length;i++){
+        const pElement = document.createElement('p');
+        pElement.value = keyArray[i];
+        pElement.name = keyArray[i];
+        pElement.textContent = keyArray[i];
+        avaiableDisplay.append(pElement);
+    }
 }
 

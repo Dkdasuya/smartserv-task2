@@ -111,3 +111,10 @@ body{
      margin-left: auto;
      
  }
+
+ .container-table-fields {
+    border: 1px solid grey;
+    height: 90%;
+    text-transform: capitalize;
+    height : 60%;
+}
